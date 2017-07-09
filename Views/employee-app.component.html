@@ -1,0 +1,25 @@
+<!--Two way binding Binding (ngModel) using @Input-->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div>    
+                Employee First Name : <input type="text" name="fisrtName"  [(ngModel)] ="empObj.fisrtName" placeholder="FisrtName" #first/> <br/><br/>
+                Employee Last Name : <input type="text" name="lastName"    [(ngModel)] ="empObj.lastName"  placeholder="LastName" #last/> <br/><br/>
+
+                <input type="submit" id="btn-login" class="btn btn-custom btn-lg btn-block" value="Submit" (click)="createTitle()"><br/><br/>
+
+                <hr/>
+                <!-- Template Attribute-->
+                     <div class="form-group"  ng-template="ngIf appStatus">
+                         <demo-app>Template Attribute</demo-app>
+                     </div>
+                </div>
+            </div>
+            <!-- /.col-xs-12 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+
